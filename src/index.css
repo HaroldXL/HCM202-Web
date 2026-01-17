@@ -1732,6 +1732,38 @@ body {
   font-size: 0.9375rem;
 }
 
+.footer-credit {
+  margin-top: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.9375rem;
+  color: var(--accent-300);
+  font-weight: 500;
+  background: rgba(251, 191, 36, 0.1);
+  border-left: 3px solid var(--accent-500);
+  border-radius: var(--radius);
+  display: inline-block;
+}
+
+.footer-credit .highlight-text {
+  font-weight: 700;
+  color: var(--accent-400);
+  text-shadow: 0 0 10px rgba(251, 191, 36, 0.3);
+}
+
+.footer-credit .gemini-logo {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0.5rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-4px); }
+}
+
 /* ===== UTILITIES ===== */
 .text-center { text-align: center; }
 .flex { display: flex; }

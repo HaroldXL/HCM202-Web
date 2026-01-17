@@ -12,7 +12,7 @@ import {
 import { theoryData } from "../data/chapter-4-1";
 
 export default function HomePage() {
-  const [openSections, setOpenSections] = useState([0, 1, 2]); // All open by default
+  const [openSections, setOpenSections] = useState([]); // All closed by default
 
   const toggleSection = (index) => {
     setOpenSections((prev) =>
