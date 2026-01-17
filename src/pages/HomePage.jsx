@@ -2,18 +2,17 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import {
   Sparkles,
-  ChevronDown,
   BookOpen,
   Shield,
   Users,
   Image,
   Star,
-  Quote,
+  ChevronDown,
 } from "lucide-react";
 import { theoryData } from "../data/chapter-4-1";
 
 export default function HomePage() {
-  const [openSections, setOpenSections] = useState([0]);
+  const [openSections, setOpenSections] = useState([0, 1, 2]); // All open by default
 
   const toggleSection = (index) => {
     setOpenSections((prev) =>
@@ -36,13 +35,16 @@ export default function HomePage() {
               </div>
 
               <h1 className="hero-title">
-                Xây dựng Đảng
-                <span className="text-gradient"> trong sạch, vững mạnh</span>
+                Đảng cầm quyền có thể mất lòng tin của nhân dân –
+                <span className="text-gradient">
+                  {" "}
+                  làm sao để tránh nguy cơ này?
+                </span>
               </h1>
 
               <p className="hero-description">
-                Tìm hiểu tư tưởng Hồ Chí Minh về tính tất yếu, vai trò lãnh đạo
-                và các nguyên tắc xây dựng Đảng Cộng sản Việt Nam.
+                Khám phá các nguy cơ khiến Đảng mất uy tín và những giải pháp
+                xây dựng Đảng trong sạch, vững mạnh theo tư tưởng Hồ Chí Minh.
               </p>
 
               <div className="hero-actions">
@@ -67,22 +69,13 @@ export default function HomePage() {
             {/* Right - Image Placeholder */}
             <div className="hero-image-wrapper fade-in-up delay-1">
               <div className="hero-image-placeholder">
-                <Image size={48} />
-                <span>Ảnh Minh Họa</span>
-                <small>800 x 600px</small>
+                <img
+                  src="/images/banner.png"
+                  alt="Lòng tin của nhân dân và vai trò lãnh đạo của Đảng"
+                  className="hero-banner-img"
+                />
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Quote Section */}
-      <section className="quote-section">
-        <div className="container">
-          <div className="quote-card fade-in-up">
-            <Quote size={32} className="quote-icon" />
-            <blockquote>"Đảng ta là đạo đức, là văn minh"</blockquote>
-            <cite>— Chủ tịch Hồ Chí Minh</cite>
           </div>
         </div>
       </section>
@@ -121,64 +114,128 @@ export default function HomePage() {
               <div className="feature-icon blue">
                 <Users size={28} />
               </div>
-              <h3>8 Nguyên tắc tổ chức</h3>
+              <h3>Nguyên tắc tổ chức</h3>
               <p>Nền tảng cho hoạt động và phát triển của Đảng</p>
             </div>
           </div>
 
-          {/* Detailed Theory Accordion */}
-          <div className="theory-accordion fade-in-up">
-            {theoryData.map((section, index) => (
-              <div
-                key={index}
-                className={`theory-item ${openSections.includes(index) ? "open" : ""}`}
-              >
-                <button
-                  className="theory-header"
-                  onClick={() => toggleSection(index)}
+          {/* Detailed Theory Sections - Each with unique layout */}
+          <div className="theory-sections">
+            {theoryData.map((section, index) => {
+              const hasPrinciples = !!section.principles;
+              const isOpen = openSections.includes(index);
+
+              return (
+                <div
+                  key={index}
+                  className={`theory-section-item fade-in-up delay-${index + 1} ${isOpen ? "open" : ""}`}
                 >
-                  <div className="theory-header-content">
-                    <span className="theory-number">
-                      {String(index + 1).padStart(2, "0")}
-                    </span>
-                    <span className="theory-title">{section.title}</span>
-                  </div>
-                  <ChevronDown size={20} className="theory-chevron" />
-                </button>
-
-                {openSections.includes(index) && (
-                  <div className="theory-body">
-                    <div className="theory-content-grid">
-                      {/* Content */}
-                      <div className="theory-text-content">
-                        <ul className="theory-points">
-                          {section.points.map((point, pIndex) => (
-                            <li key={pIndex} className="fade-in">
-                              <span className="point-bullet"></span>
-                              {point}
-                            </li>
-                          ))}
-                        </ul>
-
-                        {section.quote && (
-                          <div className="theory-quote">
-                            <p>"{section.quote.text}"</p>
-                            <cite>— {section.quote.author}</cite>
-                          </div>
+                  <div className="theory-section-container">
+                    {/* Section Header - Clickable */}
+                    <button
+                      className="theory-section-header"
+                      onClick={() => toggleSection(index)}
+                    >
+                      <span className="theory-section-number">
+                        {String(index + 1).padStart(2, "0")}
+                      </span>
+                      <div className="theory-header-text">
+                        <h3 className="theory-section-title">
+                          {section.title}
+                        </h3>
+                        {section.subtitle && (
+                          <p className="theory-section-subtitle">
+                            {section.subtitle}
+                          </p>
                         )}
                       </div>
+                      <ChevronDown size={24} className="theory-toggle-icon" />
+                    </button>
 
-                      {/* Image Placeholder */}
-                      <div className="theory-image-placeholder">
-                        <Image size={32} />
-                        <span>Ảnh minh họa</span>
-                        <small>400 x 300px</small>
-                      </div>
-                    </div>
+                    {/* Collapsible Content */}
+                    {isOpen && (
+                      <>
+                        {/* Section Image Banner */}
+                        <div className="theory-section-image-banner">
+                          <img
+                            src={`/images/section${index + 1}.png`}
+                            alt={`Minh họa ${section.title}`}
+                            className="section-banner-img"
+                          />
+                        </div>
+
+                        {hasPrinciples ? (
+                          // Full width layout for principles section
+                          <div className="theory-section-full">
+                            <div className="principles-grid">
+                              {section.principles.map((principle, pIndex) => (
+                                <div key={pIndex} className="principle-card">
+                                  <div className="principle-number">
+                                    {pIndex + 1}
+                                  </div>
+                                  <div
+                                    className="principle-text"
+                                    dangerouslySetInnerHTML={{
+                                      __html: principle,
+                                    }}
+                                  />
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                        ) : (
+                          // Layout for sections with subsections
+                          <div className="theory-section-full">
+                            <div
+                              className={`theory-subsections-wrapper ${
+                                section.sections?.length === 3
+                                  ? "three-columns"
+                                  : section.sections?.length === 2
+                                    ? "two-columns"
+                                    : ""
+                              }`}
+                            >
+                              {section.sections &&
+                                section.sections.map((subsection, sIndex) => (
+                                  <div
+                                    key={sIndex}
+                                    className="theory-subsection"
+                                  >
+                                    <h4 className="subsection-heading">
+                                      {subsection.heading}
+                                    </h4>
+                                    {subsection.content && (
+                                      <p className="subsection-content">
+                                        {subsection.content}
+                                      </p>
+                                    )}
+                                    {subsection.points && (
+                                      <ul className="theory-section-points">
+                                        {subsection.points.map(
+                                          (point, pIndex) => (
+                                            <li key={pIndex}>
+                                              <span className="point-icon"></span>
+                                              <span
+                                                dangerouslySetInnerHTML={{
+                                                  __html: point,
+                                                }}
+                                              ></span>
+                                            </li>
+                                          ),
+                                        )}
+                                      </ul>
+                                    )}
+                                  </div>
+                                ))}
+                            </div>
+                          </div>
+                        )}
+                      </>
+                    )}
                   </div>
-                )}
-              </div>
-            ))}
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>

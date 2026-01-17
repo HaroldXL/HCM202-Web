@@ -1,52 +1,63 @@
 // Dữ liệu lý thuyết cho Chapter 4.1
 export const theoryData = [
   {
-    title: "4.1.1. Tính tất yếu và vai trò lãnh đạo của Đảng CSVN",
-    points: [
-      "Trong tác phẩm Đường cách mệnh (1927), Hồ Chí Minh chỉ rõ: Cách mệnh trước hết phải có \"đảng cách mệnh\" để vận động và tổ chức dân chúng.",
-      "Đảng có vững thì cách mệnh mới thành công, cũng như người cầm lái có vững thì thuyền mới chạy.",
-      "Sự ra đời của Đảng là kết quả của sự kết hợp giữa chủ nghĩa Mác - Lênin với phong trào công nhân và phong trào yêu nước.",
-      "Đây là điểm sáng tạo của Hồ Chí Minh khi bổ sung yếu tố phong trào yêu nước vào quy luật hình thành Đảng kiểu mới.",
-      "Đảng được toàn dân tộc tin tưởng trao sứ mệnh lãnh đạo để giành độc lập, tự do và đi lên chủ nghĩa xã hội."
-    ],
-    quote: {
-      text: "Cách mệnh trước hết phải có đảng cách mệnh, để trong thì vận động và tổ chức dân chúng, ngoài thì liên lạc với dân tộc bị áp bức và vô sản giai cấp mọi nơi.",
-      author: "Hồ Chí Minh, Đường Cách mệnh (1927)"
-    }
+    title: "Tính tất yếu và vai trò lãnh đạo của Đảng Cộng sản Việt Nam",
+    subtitle: "Hồ Chí Minh khẳng định rằng sự lãnh đạo của Đảng Cộng sản Việt Nam đối với cách mạng nước ta là một tất yếu lịch sử, đáp ứng đúng yêu cầu phát triển của dân tộc.",
+    sections: [
+      {
+        heading: "Tính tất yếu của Đảng:",
+        content: "Trong tác phẩm Đường cách mệnh (1927), Người chỉ rõ: Cách mệnh trước hết phải có \"đảng cách mệnh\" để vận động và tổ chức dân chúng. Đảng có vững thì cách mệnh mới thành công, cũng như người cầm lái có vững thì thuyền mới chạy."
+      },
+      {
+        heading: "Quy luật ra đời:",
+        content: "Sự ra đời của Đảng là kết quả của sự kết hợp giữa chủ nghĩa Mác - Lênin với phong trào công nhân và phong trào yêu nước. Đây là điểm sáng tạo của Hồ Chí Minh so với học thuyết Mác - Lênin khi bổ sung thêm yếu tố phong trào yêu nước vào quy luật hình thành Đảng kiểu mới của giai cấp vô sản."
+      },
+      {
+        heading: "Vai trò lãnh đạo:",
+        content: "Đảng được toàn dân tộc tin tưởng trao cho sứ mệnh lãnh đạo để giành độc lập, tự do và đi lên chủ nghĩa xã hội. Sự lãnh đạo này là nhân tố quyết định mọi thắng lợi của cách mạng Việt Nam."
+      }
+    ]
   },
   {
-    title: "4.1.2. Đảng là đạo đức, là văn minh",
-    points: [
-      "Đảng không có mục đích riêng, chỉ lãnh đạo đấu tranh giải phóng dân tộc, giải phóng xã hội và con người.",
-      "Cương lĩnh và đường lối phải vì lợi ích của dân tộc và nhân dân.",
-      "Đội ngũ đảng viên phải thấm nhuần đạo đức cách mạng: Cần, Kiệm, Liêm, Chính, Chí công vô tư.",
-      "Đảng viên phải là \"đầy tớ thật trung thành\" của nhân dân.",
-      "Đảng tiêu biểu cho lương tâm, trí tuệ và danh dự của dân tộc.",
-      "Đảng hoạt động trong khuôn khổ Hiến pháp và pháp luật, không đứng trên nhân dân."
-    ],
-    quote: {
-      text: "Đảng ta là đạo đức, là văn minh.",
-      author: "Hồ Chí Minh"
-    }
+    title: "Đảng phải trong sạch, vững mạnh",
+    subtitle: "Hồ Chí Minh khẳng định: \"Đảng ta là đạo đức, là văn minh\". Đây là điều kiện tiên quyết để Đảng giữ vững quyền lãnh đạo.",
+    sections: [
+      {
+        heading: "Đảng là đạo đức:",
+        points: [
+          "<strong>Mục đích hoạt động:</strong> Đảng không có mục đích riêng, chỉ lãnh đạo đấu tranh giải phóng dân tộc, giải phóng xã hội và con người.",
+          "<strong>Cương lĩnh và đường lối:</strong> Phải vì lợi ích của dân tộc và nhân dân, đưa đất nước đi lên chủ nghĩa xã hội.",
+          "<strong>Đội ngũ đảng viên:</strong> Phải thấm nhuần đạo đức cách mạng: Cần, Kiệm, Liêm, Chính, Chí công vô tư. Đảng viên phải là \"đầy tớ thật trung thành\" của nhân dân."
+        ]
+      },
+      {
+        heading: "Đảng là văn minh:",
+        points: [
+          "Tiêu biểu cho lương tâm, trí tuệ và danh dự của dân tộc.",
+          "Đảng hoạt động trong khuôn khổ Hiến pháp và pháp luật, không đứng trên nhân dân.",
+          "Đội ngũ đảng viên phải là những chiến sĩ tiên phong, gương mẫu trong công tác và đời sống."
+        ]
+      }
+    ]
   },
   {
     title: "Các nguyên tắc tổ chức và hoạt động của Đảng",
-    points: [
-      "1. Lấy chủ nghĩa Mác - Lênin làm nền tảng tư tưởng và kim chỉ nam",
-      "2. Tập trung dân chủ: dân chủ để phát huy sáng tạo, tập trung để thống nhất sức mạnh",
-      "3. Tự phê bình và phê bình thường xuyên như \"mỗi ngày phải rửa mặt\"",
-      "4. Kỷ luật nghiêm minh, tự giác - nguồn gốc sức mạnh của Đảng",
-      "5. Thường xuyên tự chỉnh đốn để luôn trong sạch",
-      "6. Đoàn kết, thống nhất như \"giữ gìn con ngươi của mắt mình\"",
-      "7. Liên hệ mật thiết với nhân dân, chịu sự kiểm soát của nhân dân",
-      "8. Đoàn kết quốc tế với các dân tộc trên thế giới"
+    principles: [
+      "<strong>1. Lấy chủ nghĩa Mác - Lênin làm nền tảng tư tưởng và kim chỉ nam:</strong> Đảng phải hiểu và theo đúng chủ nghĩa ấy để tránh sai lầm.",
+      "<strong>2. Tập trung dân chủ:</strong> Là nguyên tắc tổ chức cơ bản, dân chủ để phát huy sáng tạo, tập trung để thống nhất sức mạnh.",
+      "<strong>3. Tự phê bình và phê bình:</strong> Phải thực hiện thường xuyên như \"mỗi ngày phải rửa mặt\" để giúp nhau tiến bộ.",
+      "<strong>4. Kỷ luật nghiêm minh, tự giác:</strong> Sức mạnh của Đảng bắt nguồn từ tính kỷ luật sắt và lòng tự giác của đảng viên.",
+      "<strong>5. Thường xuyên tự chỉnh đốn:</strong> Đây là nhiệm vụ cực kỳ quan trọng để Đảng luôn trong sạch và xứng đáng với niềm tin của dân.",
+      "<strong>6. Đoàn kết, thống nhất trong Đảng:</strong> Giữ gìn sự đoàn kết như giữ gìn con ngươi của mắt mình.",
+      "<strong>7. Liên hệ mật thiết với nhân dân:</strong> Đảng phải luôn gắn bó với dân, lắng nghe và chịu sự kiểm soát của nhân dân.",
+      "<strong>8. Đoàn kết quốc tế:</strong> Chú trọng quan hệ hữu nghị với các dân tộc trên thế giới."
     ]
   }
 ]
 
 // Dữ liệu câu hỏi Kiến tạo
 export const kientaoData = {
-  question: "Hồ Chí Minh từng cảnh báo rằng Đảng cầm quyền có thể \"hỏng\" nếu sa vào quan liêu, tham nhũng, xa dân. Trong bối cảnh hiện nay, đâu là những nguyên tắc để Đảng luôn trong sạch, vững mạnh và giữ trọn niềm tin nhân dân?",
+  question: "Hồ Chí Minh từng cảnh báo rằng Đảng cầm quyền có thể <span class='highlight-yellow'>\"hỏng\"</span> nếu sa vào <span class='highlight-yellow'>quan liêu, tham nhũng, xa dân</span>.<br/><br/>Trong bối cảnh hiện nay, đâu là những nguyên tắc để Đảng luôn <span class='highlight-yellow'>trong sạch, vững mạnh</span> và <span class='highlight-yellow'>giữ trọn niềm tin nhân dân</span>?",
   sections: [
     {
       title: "1. Những nguy cơ làm \"hỏng\" Đảng",

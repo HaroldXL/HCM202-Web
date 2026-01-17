@@ -23,7 +23,10 @@ export default function ChapterPage() {
 
           <div className="chapter-hero-content fade-in-up">
             <span className="chapter-tag">Phân tích chuyên sâu</span>
-            <h1 className="chapter-main-title">{kientaoData.question}</h1>
+            <h1
+              className="chapter-main-title"
+              dangerouslySetInnerHTML={{ __html: kientaoData.question }}
+            ></h1>
           </div>
         </div>
       </div>
@@ -56,9 +59,11 @@ export default function ChapterPage() {
 
                 {/* Image Placeholder */}
                 <div className="content-image-placeholder">
-                  <Image size={40} />
-                  <span>Ảnh minh họa về các nguy cơ</span>
-                  <small>Kích thước đề xuất: 800 x 400px</small>
+                  <img
+                    src="/images/chapter1.png"
+                    alt="Minh họa về các nguy cơ làm hỏng Đảng"
+                    className="content-banner-img"
+                  />
                 </div>
               </section>
 
@@ -85,9 +90,11 @@ export default function ChapterPage() {
 
                 {/* Image Placeholder */}
                 <div className="content-image-placeholder">
-                  <Image size={40} />
-                  <span>Ảnh minh họa về giải pháp</span>
-                  <small>Kích thước đề xuất: 800 x 400px</small>
+                  <img
+                    src="/images/chapter2.png"
+                    alt="Minh họa về giải pháp xây dựng Đảng"
+                    className="content-banner-img"
+                  />
                 </div>
               </section>
 
@@ -118,12 +125,26 @@ export default function ChapterPage() {
                   </ul>
                 </div>
 
-                {/* Image Placeholder in Sidebar */}
-                <div className="sidebar-image-placeholder fade-in-up delay-1">
-                  <Image size={32} />
-                  <span>Ảnh Minh Họa</span>
-                  <small>300 x 400px</small>
-                </div>
+                {/* Quiz Call-to-Action Card */}
+                <Link
+                  to="/quiz"
+                  className="sidebar-card quiz-cta-card fade-in-up delay-1"
+                >
+                  <div className="quiz-cta-icon">
+                    <CheckCircle2 size={28} />
+                  </div>
+                  <h3 className="quiz-cta-title">Kiểm tra kiến thức</h3>
+                  <p className="quiz-cta-description">
+                    Làm bài quiz để củng cố những kiến thức đã biết
+                  </p>
+                  <div className="quiz-cta-button">
+                    Làm Quiz ngay
+                    <ArrowLeft
+                      size={16}
+                      style={{ transform: "rotate(180deg)" }}
+                    />
+                  </div>
+                </Link>
               </div>
             </aside>
           </div>

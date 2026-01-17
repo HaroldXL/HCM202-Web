@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { Star, ClipboardCheck } from "lucide-react";
+import { Star, ClipboardCheck, Home, Compass } from "lucide-react";
 
 export default function Header() {
   const location = useLocation();
@@ -22,6 +22,7 @@ export default function Header() {
                   to="/"
                   className={location.pathname === "/" ? "active" : ""}
                 >
+                  <Home size={16} />
                   Trang chủ
                 </Link>
               </li>
@@ -32,6 +33,7 @@ export default function Header() {
                     location.pathname.includes("/chapter") ? "active" : ""
                   }
                 >
+                  <Compass size={16} />
                   Khám phá
                 </Link>
               </li>
