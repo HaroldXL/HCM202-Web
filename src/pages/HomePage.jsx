@@ -68,7 +68,7 @@ export default function HomePage() {
             <div className="hero-image-wrapper fade-in-up delay-1">
               <div className="hero-image-placeholder">
                 <Image size={48} />
-                <span>Ảnh Bác Hồ</span>
+                <span>Ảnh Minh Họa</span>
                 <small>800 x 600px</small>
               </div>
             </div>

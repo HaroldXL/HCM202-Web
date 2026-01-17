@@ -121,7 +121,7 @@ export default function ChapterPage() {
                 {/* Image Placeholder in Sidebar */}
                 <div className="sidebar-image-placeholder fade-in-up delay-1">
                   <Image size={32} />
-                  <span>Ảnh Bác Hồ</span>
+                  <span>Ảnh Minh Họa</span>
                   <small>300 x 400px</small>
                 </div>
               </div>
