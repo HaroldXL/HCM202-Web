@@ -58,6 +58,46 @@ export const theoryData = [
 // Dữ liệu câu hỏi Kiến tạo
 export const kientaoData = {
   question: "Hồ Chí Minh từng cảnh báo rằng Đảng cầm quyền có thể <span class='highlight-yellow'>\"hỏng\"</span> nếu sa vào <span class='highlight-yellow'>quan liêu, tham nhũng, xa dân</span>.<br/><br/>Trong bối cảnh hiện nay, đâu là những nguyên tắc để Đảng luôn <span class='highlight-yellow'>trong sạch, vững mạnh</span> và <span class='highlight-yellow'>giữ trọn niềm tin nhân dân</span>?",
+  examples: [
+    {
+      title: "Quan liêu → chính sách đúng nhưng dân khổ",
+      icon: "FileX",
+      color: "orange",
+      situation: {
+        title: "Tình huống thực tế:",
+        points: [
+          "Trung ương ban hành chính sách hỗ trợ người nghèo / thiên tai / dịch bệnh.",
+          "Nhưng: Hồ sơ rườm rà, yêu cầu giấy tờ không thực tế.",
+          "Cán bộ \"ngồi phòng lạnh\", không xuống cơ sở.",
+          "Người cần hỗ trợ thật thì không tiếp cận được, người \"quen biết\" lại được ưu tiên."
+        ]
+      },
+      consequence: {
+        title: "Hệ quả:",
+        description: "Dân nói: \"Chính sách thì hay, nhưng chúng tôi không với tới được.\" Lòng tin giảm → dân không còn tin vào lời hứa của Đảng và Nhà nước."
+      },
+      quote: "Quan liêu – xa thực tế – xa dân."
+    },
+    {
+      title: "Tham nhũng → Đảng mất uy tín nhanh nhất",
+      icon: "DollarSign",
+      color: "red",
+      situation: {
+        title: "Tình huống thực tế:",
+        points: [
+          "Dự án xây cầu, đường, bệnh viện, trường học bị \"rút ruột\" vật liệu.",
+          "Đội vốn gấp nhiều lần.",
+          "Chất lượng kém, vừa làm xong đã hỏng.",
+          "Trong khi đó, cán bộ phụ trách: Nhà cao, xe sang. Con cái du học, tài sản tăng nhanh bất thường."
+        ]
+      },
+      consequence: {
+        title: "Hệ quả:",
+        description: "Dân đặt câu hỏi: \"Tiền thuế của chúng tôi đi đâu?\" Khi Đảng cầm quyền mà để tham nhũng lan rộng, người dân không còn phân biệt \"chủ trương đúng – cán bộ sai\" mà quy trách nhiệm cho cả Đảng."
+      },
+      quote: "\"Giặc nội xâm\" – nguy hiểm hơn giặc ngoại xâm"
+    }
+  ],
   sections: [
     {
       title: "1. Những nguy cơ làm \"hỏng\" Đảng",

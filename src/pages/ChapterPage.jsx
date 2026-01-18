@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import {
   ArrowLeft,
   Image,
@@ -6,10 +7,14 @@ import {
   AlertTriangle,
   CheckCircle2,
   Lightbulb,
+  FileX,
+  DollarSign,
+  X,
 } from "lucide-react";
 import { kientaoData } from "../data/chapter-4-1";
 
 export default function ChapterPage() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <div className="chapter-page">
       {/* Hero Banner */}
@@ -56,6 +61,15 @@ export default function ChapterPage() {
                     </div>
                   ))}
                 </div>
+
+                {/* Button to show examples */}
+                <button
+                  className="show-examples-btn"
+                  onClick={() => setIsModalOpen(true)}
+                >
+                  <Lightbulb size={20} />
+                  Xem ví dụ thực tế
+                </button>
 
                 {/* Image Placeholder */}
                 <div className="content-image-placeholder">
@@ -150,6 +164,63 @@ export default function ChapterPage() {
           </div>
         </div>
       </div>
+
+      {/* Modal for Examples */}
+      {isModalOpen && (
+        <div className="modal-overlay" onClick={() => setIsModalOpen(false)}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <button
+              className="modal-close"
+              onClick={() => setIsModalOpen(false)}
+            >
+              <X size={24} />
+            </button>
+
+            <div className="modal-body">
+              <div className="examples-grid">
+                {kientaoData.examples.map((example, index) => {
+                  const IconComponent =
+                    example.icon === "FileX" ? FileX : DollarSign;
+                  return (
+                    <div
+                      key={index}
+                      className={`example-card ${example.color}`}
+                    >
+                      <div className="example-header">
+                        <div className="example-icon-wrapper">
+                          <IconComponent size={24} />
+                        </div>
+                        <h3 className="example-title">{example.title}</h3>
+                      </div>
+
+                      <div className="example-content">
+                        <div className="example-situation">
+                          <h4>{example.situation.title}</h4>
+                          <ul>
+                            {example.situation.points.map((point, i) => (
+                              <li key={i}>{point}</li>
+                            ))}
+                          </ul>
+                        </div>
+
+                        <div className="example-consequence">
+                          <h4>{example.consequence.title}</h4>
+                          <p>{example.consequence.description}</p>
+                        </div>
+
+                        <div className="example-quote">
+                          <Quote size={20} />
+                          <p>{example.quote}</p>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
