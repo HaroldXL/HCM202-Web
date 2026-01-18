@@ -126,52 +126,52 @@ export const quizData = [
   {
     question: "Theo Hồ Chí Minh, sự ra đời của Đảng Cộng sản Việt Nam là kết quả của sự kết hợp giữa những yếu tố nào?",
     options: [
-      "Chủ nghĩa Mác - Lênin với phong trào công nhân",
-      "Chủ nghĩa Mác - Lênin với phong trào công nhân và phong trào yêu nước",
       "Phong trào công nhân với phong trào nông dân",
-      "Chủ nghĩa Mác - Lênin với phong trào yêu nước"
+      "Chủ nghĩa Mác - Lênin với phong trào yêu nước",
+      "Chủ nghĩa Mác - Lênin với phong trào công nhân",
+      "Chủ nghĩa Mác - Lênin với phong trào công nhân và phong trào yêu nước"
     ],
-    correct: 1,
+    correct: 3,
     explanation: "Đây là điểm sáng tạo của Hồ Chí Minh khi bổ sung thêm yếu tố phong trào yêu nước vào quy luật hình thành Đảng kiểu mới."
   },
   {
-    question: "Hồ Chí Minh gọi tham ô, lãng phí, quan liêu là gì?",
+    question: "Chủ tịch Hồ Chí Minh gọi tham ô, lãng phí, quan liêu là gì?",
     options: [
-      "Kẻ thù của nhân dân",
-      "Giặc ngoại xâm",
       "Giặc nội xâm",
-      "Tệ nạn xã hội"
+      "Kẻ thù của nhân dân",
+      "Tệ nạn xã hội",
+      "Giặc ngoại xâm"
     ],
-    correct: 2,
-    explanation: "Hồ Chí Minh gọi đây là \"giặc nội xâm\" - nguy hiểm hơn cả giặc ngoại xâm vì chúng phá hoại từ trong phá ra."
+    correct: 0,
+    explanation: "Chủ tịch Hồ Chí Minh gọi đây là \"giặc nội xâm\" - nguy hiểm hơn cả giặc ngoại xâm vì chúng phá hoại từ trong phá ra."
   },
   {
-    question: "Theo Hồ Chí Minh, đạo đức cách mạng bao gồm những đức tính nào?",
+    question: "Theo chủ tịch Hồ Chí Minh, đạo đức cách mạng bao gồm những đức tính nào?",
     options: [
-      "Trung, Hiếu, Nhân, Nghĩa",
-      "Cần, Kiệm, Liêm, Chính, Chí công vô tư",
       "Nhân, Nghĩa, Lễ, Trí, Tín",
-      "Trung thành, Dũng cảm, Liêm khiết"
+      "Trung thành, Dũng cảm, Liêm khiết",
+      "Trung, Hiếu, Nhân, Nghĩa",
+      "Cần, Kiệm, Liêm, Chính, Chí công vô tư"
     ],
-    correct: 1,
+    correct: 3,
     explanation: "Cần, Kiệm, Liêm, Chính, Chí công vô tư là những đức tính cơ bản mà Hồ Chí Minh yêu cầu đối với cán bộ, đảng viên."
   },
   {
     question: "Nguyên tắc tổ chức cơ bản của Đảng theo tư tưởng Hồ Chí Minh là gì?",
     options: [
-      "Dân chủ tuyệt đối",
-      "Tập trung dân chủ",
       "Tập trung quyền lực",
-      "Phân quyền địa phương"
+      "Phân quyền địa phương",
+      "Dân chủ tuyệt đối",
+      "Tập trung dân chủ"
     ],
-    correct: 1,
+    correct: 3,
     explanation: "Tập trung dân chủ là nguyên tắc tổ chức cơ bản: dân chủ để phát huy sáng tạo, tập trung để thống nhất sức mạnh."
   },
   {
-    question: "Hồ Chí Minh ví việc tự phê bình và phê bình giống như điều gì?",
+    question: "Chủ tịch Hồ Chí Minh ví việc tự phê bình và phê bình giống như điều gì?",
     options: [
-      "Uống thuốc đắng",
       "Tập thể dục hàng ngày",
+      "Uống thuốc đắng",
       "Mỗi ngày phải rửa mặt",
       "Học bài mỗi tối"
     ],
@@ -179,36 +179,80 @@ export const quizData = [
     explanation: "Người nói: Tự phê bình và phê bình phải thực hiện thường xuyên như \"mỗi ngày phải rửa mặt\" để giúp nhau tiến bộ."
   },
   {
-    question: "Theo Hồ Chí Minh, giữa \"Đức\" và \"Tài\", cái nào phải là gốc?",
+    question: "Theo chủ tịch Hồ Chí Minh, giữa \"Đức\" và \"Tài\", cái nào phải là gốc?",
     options: [
-      "Tài là gốc",
-      "Đức là gốc",
       "Cả hai đều quan trọng như nhau",
-      "Tùy theo hoàn cảnh"
+      "Tùy theo hoàn cảnh",
+      "Đức là gốc",
+      "Tài là gốc"
     ],
-    correct: 1,
+    correct: 2,
     explanation: "Người khẳng định: \"Nếu không có đạo đức cách mạng thì có tài cũng vô dụng\". Đức phải là gốc."
   },
   {
-    question: "Hồ Chí Minh dặn phải giữ gìn sự đoàn kết trong Đảng như thế nào?",
+    question: "Chủ tịch Hồ Chí Minh dặn phải giữ gìn sự đoàn kết trong Đảng như thế nào?",
     options: [
+      "Như giữ gìn danh dự",
       "Như giữ gìn tài sản",
       "Như giữ gìn con ngươi của mắt mình",
-      "Như giữ gìn sức khỏe",
-      "Như giữ gìn danh dự"
+      "Như giữ gìn sức khỏe"
     ],
-    correct: 1,
+    correct: 2,
     explanation: "Người căn dặn: \"Giữ gìn sự đoàn kết như giữ gìn con ngươi của mắt mình\" - thể hiện tầm quan trọng đặc biệt của đoàn kết."
   },
   {
     question: "Tác phẩm nào của Hồ Chí Minh đề cập đến tính tất yếu của Đảng cách mạng?",
     options: [
-      "Bản án chế độ thực dân Pháp",
-      "Đường Cách mệnh",
       "Tuyên ngôn Độc lập",
-      "Di chúc"
+      "Di chúc",
+      "Đường Cách mệnh",
+      "Bản án chế độ thực dân Pháp"
     ],
-    correct: 1,
+    correct: 2,
     explanation: "Trong tác phẩm Đường Cách mệnh (1927), Hồ Chí Minh chỉ rõ: \"Cách mệnh trước hết phải có đảng cách mệnh\"."
+  },
+  {
+    question: "Tại sao Đảng phải thường xuyên tự chỉnh đốn?",
+    options: [
+      "Theo yêu cầu của quốc tế",
+      "Để phô trương thanh thế",
+      "Để thay thế toàn bộ cán bộ cũ",
+      "Để giữ vững sự trong sạch và đáp ứng nhiệm vụ mới"
+    ],
+    correct: 3,
+    explanation: "Môi trường cầm quyền dễ làm cán bộ thoái hóa, do đó phải chỉnh đốn để giữ vững bản chất cách mạng."
+  },
+  {
+    question: "Theo Hồ Chí Minh, một Đảng giấu giếm khuyết điểm là:",
+    options: [
+      "Một Đảng mạnh",
+      "Một Đảng bí mật",
+      "Một Đảng khôn ngoan",
+      "Một Đảng hỏng"
+    ],
+    correct: 3,
+    explanation: "Chỉ khi dũng cảm thừa nhận và sửa chữa khuyết điểm, Đảng mới thực sự tiến bộ và được dân chúng yêu mến."
+  },
+  {
+    question: "Yếu tố nào quyết định uy tín của Đảng trước quần chúng?",
+    options: [
+      "Sự giàu có của đảng viên",
+      "Khả năng hùng biện",
+      "Sự bí mật trong hoạt động",
+      "Sự gương mẫu về đạo đức và năng lực thực tiễn"
+    ],
+    correct: 3,
+    explanation: "Dân tin Đảng không chỉ qua lời nói mà chủ yếu qua những hành động cụ thể, có lợi cho dân và tư cách đạo đức của đảng viên."
+  },
+  {
+    question: "Một trong những đặc điểm của Đảng văn minh là:",
+    options: [
+      "Chỉ tập trung vào lý thuyết",
+      "Có quân đội riêng",
+      "Luôn thay đổi đường lối",
+      "Có quan hệ quốc tế trong sáng"
+    ],
+    correct: 3,
+    explanation: "Sự minh bạch và tình đoàn kết quốc tế chân chính thể hiện tầm vóc văn hóa và đạo đức của một Đảng kiểu mới."
   }
 ]
